@@ -1,0 +1,225 @@
+*{
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: #00828c;
+  color: white;
+}
+
+.nav-heading {
+  font-size: 30px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+}
+
+.home, .about, .products, .orders, .tracker, .profile, .signInUp {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+} 
+
+.signInUp {
+  border: 1px solid yellow;
+  border-radius: 5px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .nav-heading {
+    display: flex;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #005469;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;  
+    width: 100%;
+    z-index: 99;  
+  }
+
+  .home, .about, .products, .orders, .tracker, .profile, .signInUp {
+    color: white;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  
+  .signInUp {
+    border: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    background-color: #00828c;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;    
+  }
+}
+
+
+
+/* .product-div { 
+  display: inline-block;
+  position: relative;
+}
+
+.product-1 {
+  width: 90%;
+}
+
+.product-2 {
+  position: fixed;
+  top: 10%;
+  right: 1%;
+  width: 11%;
+  margin: 10px 10px 0 0;
+  background-image: linear-gradient(to bottom left, lightblue, rgb(196, 147, 222));
+}
+
+.product-none {
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+.product-body {
+  position: relative;
+  display: inline-block;
+  width: 310px;
+  height: 310px;
+  padding: 8px;
+  margin: 9px;
+  box-shadow: 1px 1px 5px purple;
+  border-radius: 3px;
+}
+
+.product-body:hover {
+  background-image: linear-gradient(to bottom left, lightblue, rgb(250, 95, 250));  
+  background-size: 100%;
+}
+
+.product-select {
+  border: 3px solid lightblue;
+  box-shadow: 1px 1px 5px lightblue;
+  transform: scale(0.9999);
+  transition: 0.6s;
+}
+
+.product-label {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.product-price {
+  color: rgb(1, 1, 56);
+  font-weight: bold;
+}
+
+.product-quantity {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(45, 5, 12);
+}
+
+.product-quantity input {
+  padding: 5px;
+  margin-right: 50px;
+  background-color: rgb(193, 217, 217);
+  color: rgb(7, 9, 56);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.product-body hr {
+  color: black;
+  box-shadow: 1px 1px 2px;
+  margin: 1px;
+}
+
+.product-order {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 1px 1px 1px purple;
+  transition: 0.2s;
+}
+
+.product-choose {
+  padding: 10px 0;
+  box-shadow: 1px 1px 3px;
+  margin: 0 0 40px;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+.product-button {
+  padding: 15px 43px;
+  font-size: 15px;
+  background-color: aquamarine;
+  border-radius: 5px;
+  border: none;
+  transition: 0.4s;
+}
+
+.product-button:hover {
+  background-color: #adb2fb;
+  box-shadow: 1px 1px 5px blueviolet;
+}
+
+.product-button:active {
+  transform: scale(0.98);
+}
+
+.product-addp {
+  margin: 25px 0;
+  font-size: 15px;
+  padding: 15px 22px;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.product-addp:hover {
+  background-color: #adb2fb;
+  box-shadow: 1px 1px 5px blueviolet;
+}
+
+.product-addp:active {
+  transform: scale(0.98);
+} */
